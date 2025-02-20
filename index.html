@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Jerson Contreras" />
+  <meta name="description" content="Jerson Contreras's Portfolio" />
+  <meta name="keywords" content="Programming, Automation" />
+  <meta name="theme-color" content="#09f" />
+  <meta name="view-transition" content="same-origin" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Portfolio | Jerson Contreras</title>
+  <link rel="icon" href="assets/img/logo.jpg" type="image/png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script type="module" src="assets/js/main.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home" data-lang="home">Home</a></li>
+        <li><a href="#about" data-lang="about">About Me</a></li>
+        <li><a href="#skills" data-lang="skills-container">Skills</a></li>
+        <li><a href="#portfolio" data-lang="Projects">Projects</a></li>
+        <li><a href="#contact" data-lang="contact">Contact</a></li>
+      </ul>
+
+      <div class="navbar__toggles">
+       
+        <div class="navbar__toggle--darkmode">
+          <input type="checkbox" id="darkmode-toggle">
+          <label for="darkmode-toggle">
+            <i class="bx bx-sun"></i>
+            <i class="bx bx-moon"></i>
+          </label>
+        </div>
+
+        
+        <div class="navbar__toggle--language">
+          <input type="checkbox" id="language-toggle">
+          <label for="language-toggle">EN/ES</label>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section1">
+      <div class="container1">
+        <div class="text1">
+          <h1 id="welcome-text" data-lang="welcome">Welcome to my portfolio</h1>
+          <br>
+          <p id="description-text" data-lang="description">Passionate about technology, with vast knowledge in electronic engineering and web developer, I am very interested in technological advances and the automation of tasks.</p>
+        </div>
+        <br>
+        <div class="img1">
+          <img src="assets/img/img1.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section>
+    <div class="social-links">
+      <a href="https://wa.me/+573027532474" target="_blank">
+        <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
+      </a>
+      <a href="https://github.com/jersonjjcr" target="_blank">
+        <img src="assets/icons/github1.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/jerson-contreras-95878b346/" target="_blank">
+        <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+      </a>
+      <a href="mailto:jersoncontrerasroman@gmail.com">
+        <img src="assets/icons/correo-de-manzana.svg" alt="Email">
+      </a>
+    </div>
+    <div class="cv-download">
+      <a href="cv/Jerson_Contreras_CV.pdf" download="Jerson_Contreras_CV.pdf" class="cv-button">
+        Download CV
+      </a>
+    </div>
+    
+  </section>
+
+    <section id="about" class="about section">
+      <h2 class="section__title">About Me</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+          I'm Jerson Contreras, an eighth-semester student of Electronic Engineering. Passionate about technology,
+          programming, and automation. I enjoy developing innovative solutions and working collaboratively to tackle
+          new challenges.
+        </p>
+
+        <div class="about__cards flex--container">
+         
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/img2.jpg" alt="Working as an engineer"
+              title="Working as an engineer" />
+          </div>
+          
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/img5.jpg" alt="Working as a designer"
+              title="Working as a designer" />
+          </div>
+       
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/img3.jpg" alt="Teamwork"
+              title="Teamwork" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <div class="skills-container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-description">Here are some of my main skills in web development and programming.</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="assets/icons/html-5.svg" alt="HTML Icon" class="skill-icon">
+                <h3>HTML</h3>
+                <p>Structuring modern and accessible websites with semantic HTML.</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/icons/css.svg" alt="CSS Icon" class="skill-icon">
+                <h3>CSS</h3>
+                <p>Creating responsive and visually appealing designs using CSS and animations.</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/icons/javascript.svg" alt="JavaScript Icon" class="skill-icon">
+                <h3>JavaScript</h3>
+                <p>Developing dynamic and interactive web applications with vanilla JavaScript.</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/icons/react.svg" alt="React Icon" class="skill-icon">
+                <h3>React</h3>
+                <p>Building reusable UI components and fast web applications with React.</p>
+            </div>
+        </div>
+        <div class="soft-skills">
+          <h3>Soft Skills</h3>
+          <div class="skills-container">
+              <span class="skill">Responsible</span>
+              <span class="skill">Teamwork</span>
+              <span class="skill">Creative</span>
+              <span class="skill">Punctual</span>
+              <span class="skill">Proactive</span>
+              <span class="skill">Self-taught</span>
+          </div>
+      </div>
+      
+    </div>
+    </section>
+    <section class="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="project">
+          <img src="assets/img/riego.jpg" alt="Project 1">
+          <div class="project-info">
+              <h3>AUTOMATED IRRIGATION SYSTEM</h3>
+              <p>An IoT irrigation system uses sensors and internet connectivity to optimize water use in crops or gardens. Sensors measure soil moisture, temperature and weather, sending data to a platform in real time. This allows irrigation to be activated automatically only when necessary, saving water and improving plant growth. Ideal for smart farming, gardens or greenhouses..</p>
+              <div class="buttons">
+                  <button class="btn">View Demo</button>
+                  <button class="btn">View Code</button>
+              </div>
+          </div>
+      </div>
+      
+      <div class="project reverse">
+          <div class="project-info">
+              <h3>METSUCRE</h3>
+              <p>An IoT weather station is a system that uses internet-connected sensors to measure and transmit real-time weather data such as temperature, humidity, pressure, wind, and rainfall..</p>
+              <div class="buttons">
+                <a href="https://drive.google.com/drive/folders/1U6knqvwvq-SvkfqChP5znpI0ibjmoT80" target="_blank">
+                  <button class="btn">View Demo</button>
+                  <button class="btn">View Code</button>
+              </div>
+          </div>
+          <img src="assets/img/metsucre.jpg" alt="Project 2" >
+      </div>
+      <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>📞 <a href="https://wa.me/1234567890" target="_blank">Send a message on WhatsApp</a></li>
+                    <li>📞 <a href="tel:+573027532474">+573027532474</a></li>
+                    <li>📧 <a href="mailto:jersoncontrerasroman@gmail.com">jersoncontrerasroman@gmail.com</a></li>
+                    <li>📍 <em>Sincelejo, Colombia.</em></li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email">
+                    
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Subject">
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Write your message here"></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-left">
+              <h3>Jerson Contreras</h3>
+              <p>I am a web developer, passionate about technology and programming.</p>
+          </div>
+          <div class="footer-right">
+              <h3>Social Media</h3>
+              <div class="social-icons">
+                <a href="https://wa.me/+573027532474" target="_blank">
+                  <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
+                </a>
+                <a href="https://github.com/jersonjjcr" target="_blank">
+                  <img src="assets/icons/github1.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/jerson-contreras-95878b346/" target="_blank">
+                  <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="mailto:jersoncontrerasroman@gmail.com">
+                  <img src="assets/icons/correo-de-manzana.svg" alt="Email">
+                </a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>© 2025 All rights reserved</p>
+      </div>
+    </footer>
+  </main>
+
+</body>
+
+</html>
