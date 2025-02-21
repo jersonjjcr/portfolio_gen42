@@ -9,7 +9,7 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
-/* 🎨 NAVBAR */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@ body {
     font-size: 1rem;
 }
 
-/* ☀️🌙 MODO OSCURO */
+
 body.dark-mode {
     background: #121212;
     color: white;
@@ -66,14 +66,13 @@ body.dark-mode .nav-links a {
     color: white;
 }
 
-/* 📱 RESPONSIVE */
 .menu-toggle {
     display: none;
     font-size: 2rem;
     cursor: pointer;
 }
 
-/* 🌍 Diseño para móviles */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
